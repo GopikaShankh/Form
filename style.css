@@ -1,0 +1,66 @@
+body{
+    background-image: url('https://img.freepik.com/free-photo/abstract-gradient-neon-lights_23-2149279137.jpg');
+    color: white;
+    background-size: cover;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+    font-size: 20px;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="password"], input[type="number"], textarea {
+    background: none;  
+    border: none;  
+    border-bottom: 2px solid #ccc;
+    padding: 8px 0;  
+    font-size: 16px; 
+    color: white;  
+    width: 100%;  
+    outline: none; 
+    cursor: pointer;
+}
+input:focus{
+    border-bottom: 2px solid #3B82F6;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* This will change the color to white */
+    cursor: pointer;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10x;
+}
+input, button {
+    font-size: 14px;
+    color: #9CA3AF; 
+    margin-bottom: 5px;
+}
+
+h1{
+    text-align: center;
+}
+
+#btn{
+    background-color: blue;
+    border: 2px solid black;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+

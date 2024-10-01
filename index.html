@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Validation</h1>
+        <form id="myForm" onsubmit="handleSubmit(event)" autocomplete="off">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" 
+                   onkeydown="if((event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode >= 96 && event.keyCode <= 105)) event.preventDefault();">
+            <span id="nameError" style="color: red;"></span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" autocomplete="off">
+            <span id="emailError" style="color: red;"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" autocomplete="new-password">
+            <span id="passwordError" style="color: red;"></span>
+
+            <label for="number">Phone Number</label>
+            <input type="text" id="number" placeholder="Enter your phone number" maxlength="10">
+            <span id="phoneError" style="color: red;"></span>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
+            <span id="ageError" style="color: red;"></span>
+
+            <label for="address">Address</label>
+            <textarea id="address" placeholder="Enter your address"></textarea>
+            <span id="addressError" style="color: red;"></span>
+
+            <label for="DOB">Date Of Birth</label>
+            <input type="date" id="DOB" placeholder="Enter your Date of Birth">
+            <span id="dobError" style="color: red;"></span>
+
+            <label for="gender">Choose Gender:</label>
+            <label><input type="radio" id="female" name="gender" value="female"> Female</label>
+            <label><input type="radio" id="male" name="gender" value="male"> Male</label>
+            <span id="genderError" style="color: red;"></span>
+
+            <button type="submit" id="btn" name="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
